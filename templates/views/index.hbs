@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <link rel="icon" href="/img/weather.png" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" />
+        <link rel="stylesheet" href="/css/styles.css" />
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+
+            <p>Use this site to get your weather!</p>
+
+            <form id="search-weather">
+                <input type="text" name="city" placeholder="Location" />
+                <button type="submit">Submit</button>
+            </form>
+
+            <p id="search-error"></p>
+            <p id="search-result"></p>
+        </div>
+        {{>footer}}
+        <script async type="module" src="/js/app.js"></script>
+    </body>
+</html>
